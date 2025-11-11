@@ -6,7 +6,13 @@ The book gave a nice overview of the newest PHP features and some opinions about
 ```php
 #[\NoDiscard]
 function getImportantErrorString(): string {
-     return "There was an error";
+    produceSideEffect();
+    return "There was an error";
 }
 ```
 You should either cast to void or handle the return value. Otherwise a PHP warning will be triggered.
+
+Cast to void like this:
+```php
+(void)getImportantErrorString();
+```
