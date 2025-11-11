@@ -3,7 +3,7 @@ I was checking out different container management systems and I really liked the
 I also like the added isolation that comes with rootless containers.
 
 At first I found it a bit hard to find official documentation about Quadlets but I found it in the man page
-`man "podman-systemd.unit"`.
+`man podman-systemd.unit`.
 
 For development or temporary mapping from my rootless podman containers to a privileged port like 80 I am
 using socat like this:
